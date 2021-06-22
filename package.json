@@ -1,0 +1,26 @@
+{
+  "name": "learningbydoing",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Alwindk/Learning-by-Doing.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Alwindk/Learning-by-Doing/issues"
+  },
+  "homepage": "https://github.com/Alwindk/Learning-by-Doing#readme",
+  "dependencies": {
+    "aos": "^2.3.4",
+    "bootstrap": "^4.5.3",
+    "jquery": "^3.5.1",
+    "scss": "^0.2.4"
+  }
+}

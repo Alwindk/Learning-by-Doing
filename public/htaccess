@@ -1,0 +1,17 @@
+Options +FollowSymLinks
+RewriteEngine On
+ 
+RewriteCond %{SCRIPT_FILENAME} !-d
+RewriteCond %{SCRIPT_FILENAME} !-f
+
+#make an exception for AJAX calls to set a dummy var 'skip=1' in URL
+RewriteCond %{QUERY_STRING} !^skip=1$
+
+# Canonicalise the URL - remove www and redirect to HTTPS
+RewriteCond %{HTTPS} off [OR]
+RewriteCond %{HTTP_HOST} ^www\. [NC]
+RewriteCond %{HTTP_HOST} ^(?:www\.)?(.+)$ [NC]
+RewriteRule ^ https://%1%{REQUEST_URI} [L,NE,R=301]
+
+# Internally rewrite the "pretty" URL
+RewriteRule ^([\w-]+)/?$ index.php?p=$1 [L,QSA]

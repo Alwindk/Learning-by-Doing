@@ -1,2 +1,28 @@
-# Learning-by-Doing
-The first project I did for a client. Mostly HTML, CSS, Bootstrap, and some PHP
+<<<<<<< Updated upstream
+# Basic PHP Framework
+
+## Installation
+- composer install
+- npm install
+- save .env.example as .env
+- enter your MySQL credentials in your .env file
+
+## Database Migration
+- go to your project folder
+- type: php migrate.php -f -s (-f rewrites all tables, -s seeds the tables)
+=======
+# Basic PHP Framework
+
+## Installation
+
+-   composer install
+-   npm install
+-   create a database
+-   save .env.example as .env
+-   enter your MySQL credentials in your .env file
+
+## Database Migration
+
+-   go to your project folder
+-   type: php migrate.php -f -s (-f rewrites all tables, -s seeds the tables)
+>>>>>>> Stashed changes

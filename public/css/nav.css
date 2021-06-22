@@ -1,0 +1,73 @@
+body {
+    font-family: Nunito !important;
+    /* background-color: #fff5f5;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-image: url(/public/images/main-bg.jpg);
+    background-size: cover; */
+}
+body {
+
+    background-color: #fee9e6;
+    /* background: linear-gradient(-45deg, #fee9e6, #fffbf0, #feebeb, #ffe3f4);
+    background-size: 1300% 1300%;
+    animation: gradient 15s ease infinite;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    } */
+}
+
+/* This class is already present in Bootstrap navbar. No need to add maually */
+.navbar {
+    font-family: Nunito !important;
+    background: #fff;
+
+    background: rgba(255, 255, 255, 0.6) !important;
+    /* Give transparent white background to navbar
+                                                   /* 0.2 to give little whitish effect. */
+                                                   /* Put 0 to get complete transperency */
+     z-index: 2;
+    backdrop-filter: blur(10px) saturate(125%);                   /*Blur the background */
+                                                                  /* 10px Gaussian Blur and saturate for fluent design */
+     -webkit-backdrop-filter: blur(10px) saturate(125%);           /*Increases browser compability (safari ios and mac) */
+}
+
+
+/* Add the rest of page in div with this class. Use this class accordingly. It is not necessary */
+.main-content {
+    font-family: Nunito !important;
+    color: #fff;
+    margin-top: 60px;
+}
+
+
+
+.navbar-nav > li > .dropdown-menu {
+    font-family: Nunito !important;
+    background: white !important;
+    /* Give transparent white background to navbar */
+    /* 0.2 to give little whitish effect. */
+    /* Put 0 to get complete transperency */
+    z-index: 2;
+    backdrop-filter: blur(10px) saturate(125%);
+    /* Blur the background */
+    /* 10px Gaussian Blur and saturate for fluent design */
+    -webkit-backdrop-filter: blur(10px) saturate(125%);
+    /* Increases browser compability (safari ios and mac) */
+}
+
+.navbar-nav > li > .dropdown-menu > a{
+    font-family: Nunito !important;
+    color: #EC5359;
+}
